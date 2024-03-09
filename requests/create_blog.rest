@@ -1,0 +1,77 @@
+GET http://localhost:3001/api/users/
+###
+GET http://localhost:3001/api/blogs/
+
+###
+GET http://localhost:3001/api/blogs/655b53a3f397cd8eea83d9f6
+###
+# POST http://localhost:3001/api/blogs/ HTTP/1.1
+# Content-Type: application/json 
+# Authorization: Bearer
+
+#  {
+#     "title": "llfgdb dfgfdgd nto",
+#     "author": "Robert C. Martin",
+#     "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
+#     "likes": 2
+#   }
+###
+DELETE http://localhost:3001/api/blogs/65c38b3fffea6f6252eba4af
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVtaWx5IiwiaWQiOiI2NWMzOTFiMDg1ZDkwY2RiZTkxZmU5NWUiLCJpYXQiOjE3MDczMTU3MzksImV4cCI6MTcwNzMxOTMzOX0.9MSq88cyAdWngt0l0H8AtIijxFLoetTXsrpcw7-PkdQ
+
+###
+PUT http://localhost:3001/api/blogs/655b53a3f397cd8eea83d9f6
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik11bGFrYWkiLCJpZCI6IjY1YmJhMzdhNTkwMDQwNjY3NzQwNTY2NiIsImlhdCI6MTcwNzEzNjI5NX0.jh5WmkFRfeEvnV_YPsUCgVRtyHbpiOOVAXJ5Th8MqiI
+
+
+###
+POST http://localhost:3001/api/users/ HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Emily",
+   "name": "root",
+  "password": "salainen"
+}
+
+###
+
+POST http://localhost:3001/api/blogs/ HTTP/1.1
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVtaWx5IiwiaWQiOiI2NWMzOTFiMDg1ZDkwY2RiZTkxZmU5NWUiLCJpYXQiOjE3MDczMTU3MzksImV4cCI6MTcwNzMxOTMzOX0.9MSq88cyAdWngt0l0H8AtIijxFLoetTXsrpcw7-PkdQ
+
+{
+  "title": "ffeer llllllllsjdfnyuvj",
+    "author": "Lalalan",
+    "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
+    "likes": 5,
+   "id": "65c391b085d90cdbe91fe95e"
+}
+
+
+###
+
+POST http://localhost:3001/api/login/ HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Emily",
+  "password": "salainen"
+}
+
+
+###
+
+POST http://localhost:3001/api/login/ HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Mulakai",
+  "password": "salainen"
+}
+
+
+
+
